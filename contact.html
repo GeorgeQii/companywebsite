@@ -11,8 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    <!-- 百度地图API CSS -->
-    <link rel="stylesheet" href="https://api.map.baidu.com/library/MarkerAnimation/1.2/src/MarkerAnimation.css" />
 </head>
 <body class="is-preload">
 
@@ -35,6 +33,9 @@
                 <li><a href="services.html">服务项目</a></li>
                 <li><a href="contact.html">联系方式</a></li>
             </ul>
+            <ul class="actions stacked">
+                <li><a href="https://open.beijing.gov.cn/html/park/zhongguancun_yq.html" class="button primary fit">中关村延庆园</a></li>
+            </ul>
         </nav>
 
         <!-- Main -->
@@ -51,10 +52,7 @@
                     <p><strong>电话：</strong>15611417470</p>
                     <p><strong>传真：</strong>010-82721226</p>
                     <p><strong>Email：</strong><a href="mailto:qizezhongqwq@outlook.com">qizezhongqwq@outlook.com</a></p>
-
-                    <!-- 百度地图API -->
-                    <div id="map" style="width: 100%; height: 400px;"></div>
-
+                    <p><strong>导航到我们的位置：</strong><a href="https://j.map.baidu.com/fc/-7mf" target="_blank">点击这里</a></p>
                 </div>
             </section>
 
@@ -65,6 +63,7 @@
             <div class="inner">
                 <ul class="copyright">
                     <li>&copy; 北京愉佚科技发展有限公司 2024</li>
+                    <li><a href="https://open.beijing.gov.cn/html/park/zhongguancun_yq.html">友情链接：中关村延庆园</a></li>
                 </ul>
             </div>
         </footer>
@@ -79,16 +78,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- 百度地图API JS -->
-    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=XXXXXXXXXXXX"></script>
-    <script>
-        var map = new BMap.Map("map");          // 创建地图实例
-        var point = new BMap.Point(116.23361,40.26493);  // 创建点坐标
-        map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别
-        map.addControl(new BMap.MapTypeControl());   // 添加地图类型控件
-        map.enableScrollWheelZoom(true);     // 启用滚轮放大缩小
-        map.addOverlay(new BMap.Marker(point));   // 在指定位置添加标记
-    </script>
 
 </body>
 </html>
